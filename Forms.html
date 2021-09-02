@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <h1>Forms Demo</h1>
+        <p>&#128564;</p>
+        <br>
+        <fieldset name="form">
+            <legend>Entry Form</legend>
+            <form method="post" >
+                <label>First Name</label><br>
+                <input type="text" name="firstname" placeholder="First Name" required="required" autocomplete="off"/><br><br>
+                
+                <label>Last Name</label><br>
+                <input type="text" name="lastname" placeholder="Last Name" autocomplete="off"/><br><br>
+                
+                <label>Email</label><br>
+                <input type="email" name="email" placeholder="Email address" required="required"/><br><br>
+                
+                <label>Password</label><br>
+                <input type="password" name="password" minlength="8" maxlength="12" placeholder="Enter Password" required="required"/><br><br>
+                
+                <label>Age</label><br>
+                <input type="number" name="age" min="1" max="150" placeholder="Your Age" required="required"/><br><br>
+                
+                <label>Enter your Gender</label><br>
+                <input type="radio" name="gender"/>Male<br>
+                <input type="radio" name="gender"/>Female<br>
+                <input type="radio" name="gender"/>Others<br><br>
+                
+                <label>Preferred Languages</label><br>
+                <input type="checkbox" name="html" checked/>html<br>
+                <input type="checkbox" name="C"/>C<br>
+                <input type="checkbox" name="Python"/>Python<br><br>
+    
+                <label>Which is your preferred browser?</label><br>
+                <select multiple="multiple" size="2" name="browsers">
+                    <option>Chrome</option>
+                    <option>Edge</option>
+                    <option>Firefox</option>
+                    <option>Brave</option>
+                </select><br><br>
+    
+                <label>Please provide your valuable suggestions</label><br>
+                <textarea rows="4" cols="50" name="comments"></textarea>
+                <br><br>
+    
+                <label>Upload your document</label> <br>
+                <input type="file" multiple="multiple" name="documents"/><br><br>
+    
+                <label>Enter your Date and time of Birth</label><br>
+                <input type="datetime-local"/><br><br>
+    
+                <label>Enter a color</label>
+                <input type="color"/><br><br>
+    
+                <label>Enter your preferred countries!</label><br>
+                <input list="countries" name="cntry" multiple/>
+                    <datalist id="countries">
+                        <option value="India"/>
+                        <option value="China"/>
+                        <option value="USA"/>
+                    </datalist><br><br>
+    
+                <input type="submit" value="SUBMIT"><br><br>
+    
+    
+    
+            </form>
+        </fieldset>
+        
+    </body>
+</html>

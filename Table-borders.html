@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table Border</title>
+        <style>
+            table
+            {
+                    border-style:double;
+                    border-color:red;
+                    border-width: thick;
+            }
+            p
+            {
+                border: 1px dotted green;
+                margin: 20px 10px 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            <strong>Hello</strong> Table Border <b><em>Demo</em></b>
+            <!--Create table using <table></table>
+            Create table header using <tr><th></th>...</tr>
+            Create table rows/data using <tr><td></td>...</tr>-->
+            <table>
+                <tr><th>Name</th> <td>Bill Gates</td> </tr>
+                <tr><th rowspan="2">Telephone</td> <td>1256</td></tr>
+                <tr><td>2042</td></tr>
+            </table>
+            <hr>
+            <hr>
+            <table>
+                <tr>
+                    <th rowspan="2"></th>
+                    <th colspan="3">Fruit juice drinks</th>
+                </tr>
+                <tr>
+                    <th>Apple</th>
+                    <th>Orange</th>
+                    <th>Screw Driver</th>
+                </tr>
+                <tr>
+                    <th>Breakfast</th>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>Lunch</th>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>Dinner</th>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            <hr>
+            <hr>
+        </p>
+    </body>
+    <hr>
+</html>

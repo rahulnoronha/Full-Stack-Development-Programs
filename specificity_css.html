@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Specificity is used to find out which style is the one that is given the priority, and if two styles apply to a tag then the one with
+greater specificity is chosen. Specificity has 4 parameters Style ID Class Number of elements.
+Eg. p <style=""> </p> = 1000
+div p {color:""} = 0002
+div.big p {color:""} = 0012-->
+<html>
+    <head>
+        <title>Style Specificity</title>
+        <style>
+            div.demo p
+            {
+                color:green; /*Specificity 0012 and so any p.first inside div.demo p will be green in color*/
+            }
+            p.first
+            {
+                color:yellow; /*Specificity 0011*/
+            }
+            ol {
+                list-style-type: upper-roman;
+            }
+            ol ol {
+                list-style-type: upper-alpha;
+            }
+            ol ol ol {
+                list-style-type: decimal;
+            }
+            /*Alternatively we can give class attributes to each ol element and then use those to set styles*/
+        </style>
+    </head>
+    <body>
+        <h1>Specificity of Styles Demo</h1>
+        <p>
+            <hr>
+            <ol> <!--Decimal is the defualt list-style-type and hence need not be specified, but here we use internal styling-->
+                <li>General Aviation</li>
+                <ol>
+                    <li>Single-Engine Aircraft</li>
+                    <ol>
+                        <li>Tail Wheel</li>
+                        <li>Tricycle</li>
+                    </ol>
+                    <li>Dual Aircraft Engine</li>
+                    <ol>
+                        <li>Wing mounted engine</li>
+                        <li>Push pull Fuselage</li>
+                    </ol>
+                </ol>
+                <li>Commercial Aviation</li>
+                <ol>
+                    <li>Dual Engine</li>
+                    <ol>
+                        <li>Wing Mounted Engine</li>
+                        <li>Fuselage Mounted Engine</li>
+                    </ol>
+                    <li>Tri-Engine</li>
+                    <ol>
+                        <li>Third Engine in vertical</li>
+                        <li>Third Engine in Fuselage</li>
+                    </ol>
+                </ol>
+            </ol>
+        </p>
+        <div class="demo">
+            <p class="first"> Conflict Resolution</p>
+        </div>
+    </body>
+</html>

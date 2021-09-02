@@ -1,0 +1,30 @@
+p{
+    font-family: 'Times New Roman';
+    color: #0099fe;
+    font-size: 14pt;
+}
+h1{
+    font-family: 'Lucida Handwriting';
+    color: #24fffe;
+    font-size: 14pt;
+}
+.red{
+    font-family: 'Times New Roman';
+    color: #ff0000;
+    font-size: 14pt;
+}
+p.blue{
+    font-family: 'Times New Roman';
+    color: #0000ff;
+    font-size: 14pt;
+}
+h1.blue{
+    font-family: 'Times New Roman';
+    color: #0000ff;
+    font-size: 14pt; 
+}
+#green{
+    font-family: 'Times New Roman';
+    color: #00ff00;
+    font-size: 14pt; 
+}
